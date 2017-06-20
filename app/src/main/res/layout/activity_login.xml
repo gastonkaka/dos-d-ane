@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="dab.esprit.tn.Login_Activity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/backgroundeffect3">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="354dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:id="@+id/facebook"-->
+        <!--android:background="#445cff"-->
+        <!--android:weightSum="1"-->
+        <!--android:layout_weight="0.03">-->
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebookButton"
+            android:layout_width="179dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp" />
+    <!--</LinearLayout>-->
+
+    <Space
+        android:layout_width="98dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.08" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/linearLayout" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="8dp"
+        android:layout_height="12dp"
+        android:id="@+id/google"
+        android:background="#ff0023" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google+"
+            android:id="@+id/googleButton" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuer "
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="#fff66f"
+        android:background="#fb111111" />
+</LinearLayout>

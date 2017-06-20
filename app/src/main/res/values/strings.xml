@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dos D’âne En Tunisie</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="app_id">425114821031611</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="test3">Hello test3</string>
+    <string name="checkdos">Speed bump</string>
+    <string name="checkchaus">Floor degraded</string>
+    <string name="Signaler">Signaler</string>
+    <string name="switchh">Detection Mode</string>
+    <string name="alerte">Speed Bump in less than 500 meters</string>
+    <string name="detected">Okay! I will stay silent now.</string><string name="votre">This photo represent</string>
+    <string name="switchhtext">Alerte you from the existing anomalies and detect new ones.</string>
+    <string name="mostrecent">Most Recent Anomalie</string>
+    <string name="type">Choose the type</string>
+
+
+
+</resources>

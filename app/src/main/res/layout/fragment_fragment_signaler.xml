@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3android"
+    tools:context="yalantis.com.sidemenu.sample.fragment.FragmentSignaler">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <Button
+            android:id="@+id/buttonTakePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/photo"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:allowUndo="true">
+        </Button>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/img"
+            android:adjustViewBounds="false"
+            android:layout_marginBottom="10dp"
+            android:background="#042138"
+            android:layout_below="@+id/buttonTakePhoto"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/background_dark"
+            android:text="@string/type"
+            android:textSize="20dp"
+            android:id="@+id/textView3"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/img"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayoutcheckbox"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/textView3">
+
+        <CheckBox
+            android:id="@+id/dos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkdos"
+            />
+
+        <CheckBox
+            android:id="@+id/chausse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkchaus" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Signaler"
+            android:id="@+id/signaelr"
+            android:background="@android:color/holo_red_dark"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/linearlayoutcheckbox"/>
+    </RelativeLayout>
+
+
+    <!--android:background="@color/red"-->
+</FrameLayout>

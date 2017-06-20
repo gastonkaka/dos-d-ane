@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yalantis.com.sidemenu.sample.fragment.AboutUsFragment"
+
+
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/niceroad"
+
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <ImageView
+                android:layout_width="117dp"
+                android:layout_height="113dp"
+                android:id="@+id/imagenuit"
+                android:src="@drawable/mejri"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Mejri Ghassen"
+
+
+                android:layout_gravity="center"
+                android:gravity="center|center_vertical"
+                android:height="100dp"
+                android:nestedScrollingEnabled="false"
+                android:textColor="#f2fffb"
+                android:textSize="20dp"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <ImageView
+                android:layout_width="114dp"
+                android:layout_height="109dp"
+                android:id="@+id/imagenuit1"
+                android:src="@drawable/jarraya" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Jarraya Mehdi"
+
+
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:foregroundTint="#ffeb32"
+                android:textColor="#fffaf9"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="20dp"
+                android:textIsSelectable="false" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.93">
+
+            <ImageView
+                android:layout_width="99dp"
+                android:layout_height="57dp"
+
+                android:id="@+id/imagenuit3"
+                android:src="@drawable/esp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="196dp"
+                android:text="Le programme d’ESPRIT Mobile pour 2014 prévoit le lancement de la 1ère communauté Tunisienne de développeurs Tizen « Tun Tisen ». De même pour consolider ses activités, ESPRIT Mobile prévoit d’acquérir de nouveaux matériels et de nouvelles plateformes : plateformes mobiles, robots humanoïdes…etc. Enfin ESPRIT Mobile envisage d’organiser et/ou de participer à des challenges nationaux et internationaux. "
+                android:id="@+id/textView2"
+                android:textColor="#fcfff2" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Conatct_us"
+                android:id="@+id/btncontact"
+                android:background="#abffc42f"
+                android:textColor="#ffffff"
+                android:layout_weight="0.48" />
+
+            <Button
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="Facebook PAge"
+                android:id="@+id/button3"
+                android:layout_marginTop="25dp"
+                android:background="#baffbe2f"
+                android:layout_gravity="right"
+                android:layout_weight="0.39"
+                android:textColor="#fcffce" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

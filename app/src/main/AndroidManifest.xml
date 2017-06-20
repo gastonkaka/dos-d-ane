@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="yalantis.com.sidemenu.sample">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- ena zedthom il kol w ACCESS_COARSE_LOCATION mawjoudaf fi code  et ACCESS_FINE_LOCATION -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.dev.cromer.jason.coverme.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- permission broadcast receiver -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+
+    <application
+        android:name=".DosDaneApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDRpGWPpX8fvBGcOIRnLCVlcnCVaA2JFjc"/>
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="PElME4JwN4afYrAYpa4ZPt7Kz2GIqEwBd7d9MboN" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="VgGp18P96ER9wgc7D4bj1V4jDBLQkCpzqkXB2SiV" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+
+
+        <!--<meta-data-->
+            <!--android:name="com.google.android.geo.API_KEY"-->
+            <!--android:value="@string/google_maps_key" />-->
+
+
+
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <uses-feature
+            android:name="android.hardware.type.watch"
+            android:required="false" />
+
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".fragment.GuideFragment"
+            android:label="guide" >
+        </activity>
+
+
+        <service
+            android:name=".Services.ServiceAlertDistance"
+            android:enabled="true"
+            android:exported="true" >
+            <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" >
+            </meta-data>
+        </service>
+
+        <receiver
+            android:name=".BroadcastReceivers.MyReceiverNotif"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="MAP_ACTION" />
+                <action android:name="NO_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".Services.ServiceUpdateLocalDB"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+    </application>
+
+</manifest>

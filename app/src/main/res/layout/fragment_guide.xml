@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yalantis.com.sidemenu.sample.fragment.GuideFragment">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/f"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/screen_navigation_button" />
+
+        <!--  This TextView will not swipe when you swipe in the ViewPager -->
+
+        <TextView
+            android:id="@id/screen_navigation_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Voici Votre Guide d'utilisation"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+</FrameLayout>
